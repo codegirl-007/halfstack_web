@@ -1,0 +1,17 @@
+[build]
+  # Command to build your app.
+  cmd = "go build -o tmp/main ."
+  # The output binary.
+  bin = "tmp/main"
+  # File extensions to include for watching.
+  include_ext = ["go", "tpl", "tmpl", "html", "md"]
+  kill_timeout = 5
+  # Directories to exclude.
+  exclude_dir = ["tmp", "vendor"]
+
+[color]
+  # Customize log colors if desired.
+  main = "yellow"
+  watcher = "cyan"
+  build = "green"
+  runner = "magenta"
